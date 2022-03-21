@@ -22,12 +22,26 @@ public class Main {
         }
         System.out.println("The Greatest Double value is:- "+max);
     }
+
+    public static void findMaxString(String a,String b,String c){
+        String max=a;
+        if (max.compareTo(b)<0){
+            max=b;
+        }
+        if (max.compareTo(c)<0){
+            max=c;
+        }
+        System.out.println("The Greatest String is:- " +max);
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome to Java Generic Program to find maximum number");
         int num1=100,num2=200,num3=300;
         findMaxInteger(num1,num2,num3);
         double a=20.5,b=40.5,c=60.5;
         findMaxDouble(a,b,c);
+        String s1="ashvini",s2="kanojia",s3="jabalpur";
+        findMaxString(s1,s2,s3);
     }
 }
 
